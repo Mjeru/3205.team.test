@@ -1,0 +1,18 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.form input {
+	border: none;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.form input:focus {
+	outline: 4px auto -webkit-focus-ring-color;
+}
+
+.form input:invalid {
+	outline: 4px auto red;
+}
