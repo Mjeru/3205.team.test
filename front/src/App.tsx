@@ -6,9 +6,13 @@ function App() {
 	const [names, setNames] = useState<{ email: string; number: string }[]>([])
 
 	const renderList = () => {
-		return names.map((item, index) => {
-			return <li key={index}>{`${item.email} ${item.number}`}</li>
-		})
+		return (
+			<ul>
+				{names.map((item, index) => {
+					return <li key={index}>{`${item.email} ${item.number}`}</li>
+				})}
+			</ul>
+		)
 	}
 	return (
 		<>
